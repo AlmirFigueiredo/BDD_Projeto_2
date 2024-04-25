@@ -1,17 +1,34 @@
-INSERT INTO pessoa (pessoa_id, nome, email, endereco, data_nascimento, telefone, cpf) VALUES
-(1, 'João Silva', 'joao.silva@example.com', 'Rua ABC, 100, Cidade XYZ', '1980-03-15', '11987654321', '123.456.789-09'),
-(2, 'Maria Fernandes', 'maria.fernandes@example.com', 'Av. DEF, 200, Cidade QRS', '1992-07-22', '21987654321', '987.654.321-00'),
-(3, 'Carlos Oliveira', 'carlos.oliveira@example.com', 'Rua GHI, 300, Cidade TUV', '1985-11-10', '31987654321', '234.567.890-12'),
-(4, 'Ana Santos', 'ana.santos@example.com', 'Av. JKL, 400, Cidade WXY', '1998-04-28', '41987654321', '345.678.901-23'),
-(5, 'Luiz Pereira', 'luiz.pereira@example.com', 'Rua MNO, 500, Cidade PQR', '1976-09-03', '51987654321', '456.789.012-34'),
-(6, 'Mariana Costa', 'mariana.costa@example.com', 'Av. STU, 600, Cidade LMN', '1989-12-20', '61987654321', '567.890.123-45'),
-(7, 'Pedro Almeida', 'pedro.almeida@example.com', 'Rua VWX, 700, Cidade OPQ', '1995-02-14', '71987654321', '678.901.234-56'),
-(8, 'Juliana Oliveira', 'juliana.oliveira@example.com', 'Av. YZA, 800, Cidade RST', '1983-06-08', '81987654321', '789.012.345-67'),
-(9, 'Lucas Rodrigues', 'lucas.rodrigues@example.com', 'Rua BCD, 900, Cidade EFG', '2000-08-18', '91987654321', '890.123.456-78'),
-(10, 'Camila Silva', 'camila.silva@example.com', 'Av. HIJ, 1000, Cidade CBA', '1993-01-25', '101987654321', '901.234.567-89');
-
-
-
+INSERT INTO pessoa (email, endereco, data_nascimento, telefone, pessoa_id, cpf, nome) VALUES
+('joao.silva@example.com', 'Rua das Flores, 123, Recife', '1990-05-15', '+00 123 1987654321', 1, '123.456.789-00', 'João da Silva Santos'),
+('maria.oliveira@example.com', 'Av. Principal, 456, Olinda', '1985-09-20', '+00 123 1912345678', 2, '987.654.321-00', 'Maria Oliveira Silva'),
+('pedro.souza@example.com', 'Rua do Comércio, 789, Olinda', '1982-03-10', '+00 123 1923456789', 3, '456.789.012-00', 'Pedro Souza Oliveira'),
+('ana.santos@example.com', 'Av. Central, 321', '1978-12-05', '+00 123 1934567890', 4, '789.012.345-00', 'Ana Santos Rodrigues'),
+('lucas.lima@example.com', 'Rua do Bosque, 567, Recife', '1995-07-25', '+00 123 1945678901', 5, '012.345.678-00', 'Lucas Lima Ferreira'),
+('carla.ferreira@example.com', 'Av. dos Estados, 890, Recife', '1998-11-30', '+00 123 1956789012', 6, '234.567.890-00', 'Carla Ferreira Almeida'),
+('ricardo.almeida@example.com', 'Rua das Árvores, 234', '1970-08-12', '+00 123 1967890123', 7, '567.890.123-00', 'Ricardo Almeida Costa'),
+('fernanda.pereira@example.com', 'Av. dos Bandeirantes, 901, Petrolina','1965-04-18', '+00 123 1978901234', 8, '901.234.567-00', 'Fernanda Pereira Lima'),
+('mario.silveira@example.com', 'Rua das Pedras, 345, Olinda', '1980-01-22', '+00 123 1989012345', 9, '345.678.901-00', 'Mário Silveira Gomes'),
+('julia.rodrigues@example.com', 'Av. das Rosas, 678, Recife', '1993-06-08', '+00 123 1990123456', 10, '678.901.234-00', 'Júlia Rodrigues Martins'),
+('carlos.souza@example.com', 'Rua das Praias, 123, Olinda', '1987-09-14', '+00 123 1901234567', 11, '123.456.789-01', 'Carlos Souza Rocha'),
+('ana.carvalho@example.com', 'Av. do Sol, 456, Olinda', '1984-02-28', '+00 123 1912345678', 12, '987.654.321-01', 'Ana Carvalho Ribeiro'),
+('andre.oliveira@example.com', 'Rua da Lua, 789', '1979-12-17', '+00 123 1923456789', 13, '456.789.012-01', 'André Oliveira Alves'),
+('camila.silva@example.com', 'Av. das Estrelas, 321, Recife', '1996-07-05', '+00 123 1934567890', 14, '789.012.345-01', 'Camila Silva Monteiro'),
+('marcio.gomes@example.com', 'Rua da Neve, 101', '1972-04-30', '+00 123 1945678901', 15, '012.345.678-01', 'Márcio Gomes Mendes'),
+('patricia.almeida@example.com', 'Av. das Águias, 777, Olinda', '1988-10-20', '+00 123 1956789012', 16, '234.567.890-01', 'Patrícia Almeida Barros'),
+('rafael.costa@example.com', 'Rua do Mar, 888, Recife', '1991-08-15', '+00 123 1967890123', 17, '567.890.123-01', 'Rafael Costa Freitas'),
+('carolina.souza@example.com', 'Av. dos Ventos, 999', '1976-03-05', '+00 123 1978901234', 18, '901.234.567-01', 'Carolina Souza Barbosa'),
+('felipe.pereira@example.com', 'Rua da Montanha, 505, Olinda', '1983-11-25', '+00 123 1989012345', 19, '345.678.901-01', 'Felipe Pereira Pinto'),
+('natalia.fernandes@example.com', 'Av. dos Lagos, 303, Olinda', '1986-06-18', '+00 123 1990123456', 20, '678.901.234-01', 'Natália Fernandes Moura'),
+('rodrigo.silva@example.com', 'Rua das Margaridas, 222, Olinda', '1987-04-12', '+00 123 1987654321', 21, '111.222.333-44', 'Rodrigo Silva Cavalcanti'),
+('vanessa.fernandes@example.com', 'Av. das Orquídeas, 555, Recife', '1992-09-08', '+00 123 1912345678', 22, '444.555.666-77', 'Vanessa Fernandes Dias'),
+('gustavo.santos@example.com', 'Rua dos Lírios, 888', '1975-12-24', '+00 123 1923456789', 23, '777.888.999-00', 'Gustavo Santos Castro'),
+('amanda.ferreira@example.com', 'Av. das Tulipas, 111, Olinda', '1989-06-30', '+00 123 1934567890', 24, '000.111.222-33', 'Amanda Ferreira Campos'),
+('felipe.almeida@example.com', 'Rua dos Cravos, 444, Olinda', '1981-11-18', '+00 123 1945678901', 25, '333.444.555-66', 'Felipe Almeida Cardoso'),
+('patricia.rosa@example.com', 'Av. das Rosas, 777, Olinda', '1984-03-07', '+00 123 1956789012', 26, '222.333.444-55', 'Patricia Rosa Silva'),
+('lucas.mendes@example.com', 'Rua das Violetas, 333, Recife', '1996-08-22', '+00 123 1967890123', 27, '555.666.777-88', 'Lucas Mendes Neto'),
+('camila.pereira@example.com', 'Av. das Margaridas, 666, Recife', '1990-05-15', '+00 123 1978901234', 28, '888.999.000-11', 'Camila Pereira Machado'),
+('marcos.rocha@example.com', 'Rua dos Girassóis, 999, Olinda', '1983-07-01', '+00 123 1989012345', 29, '999.000.111-22', 'Marcos Rocha Nunes'),
+('bruna.ferreira@example.com', 'Av. das Laranjeiras, 777', '1978-02-14', '+00 123 1990123456', 30, '111.222.333-44', 'Bruna Ferreira Carvalho');
 INSERT INTO cliente (cliente_id) VALUES
 (1),
 (2),
@@ -72,29 +89,29 @@ INSERT INTO funcionario (funcionario_id, carga_horaria, valor_hora, turno, depar
 
 
 INSERT INTO professor (professor_id, departamento_academico, titulacao, especialidade, fk_pessoa_pessoa_id) VALUES
-(1, 'Matemática', 'Doutorado', 'Álgebra', 2),
-(2, 'Física', 'Mestrado', 'Mecânica Clássica', 3),
-(3, 'Química', 'Doutorado', 'Orgânica', 4),
-(4, 'Biologia', 'Mestrado', 'Genética', 5),
-(5, 'História', 'Doutorado', 'Moderna', 6),
-(6, 'Geografia', 'Mestrado', 'Física', 7),
-(7, 'Português', 'Doutorado', 'Literatura', 8),
-(8, 'Inglês', 'Mestrado', 'Linguística Aplicada', 9),
-(9, 'Artes', 'Doutorado', 'Pintura', 10),
-(10, 'Educação Física', 'Mestrado', 'Desportiva', 1);
+(11, 'Matemática', 'Doutorado', 'Álgebra', 11),
+(12, 'Física', 'Mestrado', 'Mecânica Clássica', 12),
+(13, 'Química', 'Doutorado', 'Orgânica', 13),
+(14, 'Biologia', 'Mestrado', 'Genética', 14),
+(15, 'História', 'Doutorado', 'Moderna', 15),
+(16, 'Geografia', 'Mestrado', 'Física', 16),
+(17, 'Português', 'Doutorado', 'Literatura', 17),
+(18, 'Inglês', 'Mestrado', 'Linguística Aplicada', 18),
+(19, 'Artes', 'Doutorado', 'Pintura', 19),
+(20, 'Educação Física', 'Mestrado', 'Desportiva', 20);
 
 
 INSERT INTO aluno (aluno_id, matricula, email_institucional, ano_escolar, fk_pessoa_pessoa_id) VALUES
-(1, '20230001', '20230001@inst.edu', '1º Ano', 1),
-(2, '20230002', '20230002@inst.edu', '2º Ano', 2),
-(3, '20230003', '20230003@inst.edu', '3º Ano', 3),
-(4, '20230004', '20230004@inst.edu', '4º Ano', 4),
-(5, '20230005', '20230005@inst.edu', '1º Ano', 5),
-(6, '20230006', '20230006@inst.edu', '2º Ano', 6),
-(7, '20230007', '20230007@inst.edu', '3º Ano', 7),
-(8, '20230008', '20230008@inst.edu', '4º Ano', 8),
-(9, '20230009', '20230009@inst.edu', '1º Ano', 9),
-(10, '20230010', '20230010@inst.edu', '2º Ano', 10);
+(21, '20230001', '20230001@inst.edu', '1º Ano', 21),
+(22, '20230002', '20230002@inst.edu', '2º Ano', 22),
+(23, '20230003', '20230003@inst.edu', '3º Ano', 23),
+(24, '20230004', '20230004@inst.edu', '4º Ano', 24),
+(25, '20230005', '20230005@inst.edu', '1º Ano', 25),
+(26, '20230006', '20230006@inst.edu', '2º Ano', 26),
+(27, '20230007', '20230007@inst.edu', '3º Ano', 27),
+(28, '20230008', '20230008@inst.edu', '4º Ano', 28),
+(29, '20230009', '20230009@inst.edu', '1º Ano', 29),
+(30, '20230010', '20230010@inst.edu', '2º Ano', 30);
 
 
 
@@ -269,30 +286,30 @@ INSERT INTO autor (autor_id, nome, email, telefone, data_nascimento, data_faleci
 
  
  INSERT INTO avaliacao (avalicao_id, pontuacao, nome, fk_professor_professor_id, fk_professor_fk_pessoa_pessoa_id) VALUES
-(1, 9.5, 'Prova de Matemática', 1, 2),
-(2, 8.5, 'Prova de Física', 2, 3),
-(3, 7.0, 'Prova de Química', 3, 4),
-(4, 6.5, 'Prova de Biologia', 4, 5),
-(5, 8.0, 'Prova de História', 5, 6),
-(6, 7.5, 'Prova de Geografia', 6, 7),
-(7, 9.0, 'Prova de Português', 7, 8),
-(8, 6.0, 'Prova de Inglês', 8, 9),
-(9, 8.2, 'Prova de Artes', 9, 10),
-(10, 7.8, 'Prova de Educação Física', 10, 1);
+(1, 9.5, 'Prova de Matemática', 11, 11),
+(2, 8.5, 'Prova de Física', 12, 12),
+(3, 7.0, 'Prova de Química', 13, 13),
+(4, 6.5, 'Prova de Biologia', 14, 14),
+(5, 8.0, 'Prova de História', 15, 15),
+(6, 7.5, 'Prova de Geografia', 16, 16),
+(7, 9.0, 'Prova de Português', 17, 17),
+(8, 6.0, 'Prova de Inglês', 18, 18),
+(9, 8.2, 'Prova de Artes', 19, 19),
+(10, 7.8, 'Prova de Educação Física', 20, 20);
 
  
 
 INSERT INTO mensalidade (mensalidade_id, data_de_liberacao, data_de_vencimento, valor_liquido, valor_bruto, desconto, fk_aluno_aluno_id, fk_aluno_fk_pessoa_pessoa_id) VALUES
-(1, '2024-01-05', '2024-01-25', 200.00, 220.00, 20.00, 1, 1),
-(2, '2024-02-05', '2024-02-25', 200.00, 220.00, 20.00, 2, 2),
-(3, '2024-03-05', '2024-03-25', 200.00, 220.00, 20.00, 3, 3),
-(4, '2024-04-05', '2024-04-25', 200.00, 220.00, 20.00, 4, 4),
-(5, '2024-05-05', '2024-05-25', 200.00, 220.00, 20.00, 5, 5),
-(6, '2024-06-05', '2024-06-25', 200.00, 220.00, 20.00, 6, 6),
-(7, '2024-07-05', '2024-07-25', 200.00, 220.00, 20.00, 7, 7),
-(8, '2024-08-05', '2024-08-25', 200.00, 220.00, 20.00, 8, 8),
-(9, '2024-09-05', '2024-09-25', 200.00, 220.00, 20.00, 9, 9),
-(10, '2024-10-05', '2024-10-25', 200.00, 220.00, 20.00, 10, 10);
+(1, '2024-01-05', '2024-01-25', 200.00, 220.00, 20.00, 21, 21),
+(2, '2024-02-05', '2024-02-25', 200.00, 220.00, 20.00, 22, 22),
+(3, '2024-03-05', '2024-03-25', 200.00, 220.00, 20.00, 23, 23),
+(4, '2024-04-05', '2024-04-25', 200.00, 220.00, 20.00, 24, 24),
+(5, '2024-05-05', '2024-05-25', 200.00, 220.00, 20.00, 25, 25),
+(6, '2024-06-05', '2024-06-25', 200.00, 220.00, 20.00, 26, 26),
+(7, '2024-07-05', '2024-07-25', 200.00, 220.00, 20.00, 27, 27),
+(8, '2024-08-05', '2024-08-25', 200.00, 220.00, 20.00, 28, 28),
+(9, '2024-09-05', '2024-09-25', 200.00, 220.00, 20.00, 29, 29),
+(10, '2024-10-05', '2024-10-25', 200.00, 220.00, 20.00, 30, 30);
 
  
  
@@ -346,16 +363,16 @@ INSERT INTO emprestimo (emprestimo_id, fk_cliente_cliente_id, fk_livro_livro_id,
 
  
  INSERT INTO leciona_disc (fk_professor_professor_id, fk_professor_fk_pessoa_pessoa_id, fk_disciplina_disciplina_id) VALUES
-(1, 2, 1),
-(2, 3, 2),
-(3, 4, 3),
-(4, 5, 4),
-(5, 6, 5),
-(6, 7, 6),
-(7, 8, 7),
-(8, 9, 8),
-(9, 10, 9),
-(10, 1, 10);
+(11, 11, 1),
+(12, 12, 2),
+(13, 13, 3),
+(14, 14, 4),
+(15, 15, 5),
+(16, 16, 6),
+(17, 17, 7),
+(18, 18, 8),
+(19, 19, 9),
+(20, 20, 10);
 
  
  INSERT INTO possui_tur (fk_aula_aula_id, fk_turma_turma_id) VALUES
@@ -388,52 +405,72 @@ INSERT INTO fica_em_sal (fk_turma_turma_id, fk_sala_sala_id) VALUES
  
  
 INSERT INTO faz_aval (fk_aluno_aluno_id, fk_aluno_fk_pessoa_pessoa_id, fk_avaliacao_avalicao_id) VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
-(4, 4, 4),
-(5, 5, 5),
-(6, 6, 6),
-(7, 7, 7),
-(8, 8, 8),
-(9, 9, 9),
-(10, 10, 10);
+(21, 21, 1),
+(22, 22, 2),
+(23, 23, 3),
+(24, 24, 4),
+(25, 25, 5),
+(26, 26, 6),
+(27, 27, 7),
+(28, 28, 8),
+(29, 29, 9),
+(30, 30, 10);
 
 
 
-SELECT * FROM aluno;
+-- Alterando dados na tabela aluno
 
---alterando dados na tabela aluno
-UPDATE aluno 
-SET ano_escolar = '1º Ano' 
-WHERE aluno_id = 1;
+	-- Updating na tabela aluno:
+	UPDATE aluno 
+	SET ano_escolar = '1º Ano' 
+	WHERE aluno_id = 21;
 
-DELETE FROM ALUNO
-WHERE aluno_id = 1;
+	-- Deletando um Aluno
+		--Deletando as relacoes de Aluno antes de deletar ele:
+		DELETE FROM faz_aval
+		WHERE fk_aluno_aluno_id = 21;
+	DELETE FROM ALUNO
+	WHERE aluno_id = 21;
 
-INSERT INTO aluno (aluno_id, matricula, email_institucional, ano_escolar, fk_pessoa_pessoa_id) VALUES
-(1, '20230001', '20230001@inst.edu', '1º Ano', 1);
+	-- Inserindo um novo aluno:
+		--Inserindo uma pessoa antes:
+			INSERT INTO pessoa (email, endereco, data_nascimento, telefone, pessoa_id, cpf, nome) VALUES
+			('marcos.silva@example.com', 'Rua das Flores, 133, Recife', '1990-04-15', '+00 123 1987654321', 31, '123.456.569-00', 'Marcos da Silva Santos');
+	INSERT INTO aluno (aluno_id, matricula, email_institucional, ano_escolar, fk_pessoa_pessoa_id) VALUES
+	(31, '20230001', '20230001@inst.edu', '1º Ano', 31);
 
---alterando dados na tabela professor
-UPDATE professor 
-SET titulacao = 'Phd' 
-WHERE professor_id = 1;
+-- Alterando dados na tabela professor
+	-- Updating na tabela professor:
+	UPDATE professor 
+	SET titulacao = 'Phd' 
+	WHERE professor_id = 11;
+	-- Deletando dados na tabela professor
+		-- Deletando as relacoes do professor antes
+			DELETE FROM leciona_disc
+			WHERE fk_professor_professor_id = 11;
+		DELETE FROM professor
+		WHERE professor_id = 11;
+	-- Inserindo um novo professor:
+	INSERT INTO professor (professor_id, departamento_academico, titulacao, especialidade, fk_pessoa_pessoa_id) VALUES
+	(11, 'Matemática', 'Doutorado', 'Álgebra', 11);
 
-DELETE FROM professor
-WHERE professor_id = 1;
+-- Alterando dados na tabela funcionario
+	-- Updating na tabela funcionario:
+	UPDATE funcionario
+	SET valor_hora = 1000
+	WHERE funcionario_id= 1;
+	-- Deletando dados na tabela funcionario:
+	DELETE FROM funcionario
+	WHERE funcionario_id = 1;
+	-- Inserindo novo funcionario:
+	INSERT INTO funcionario (funcionario_id, carga_horaria, valor_hora, turno, departamento, setor_departamento, fk_pessoa_pessoa_id) VALUES
+(1, 40, 30.00, 'Diurno', 'TI', 'Analista de Dados', 1);
 
-INSERT INTO professor (professor_id, departamento_academico, titulacao, especialidade, fk_pessoa_pessoa_id) VALUES
-(1, 'Matemática', 'Doutorado', 'Álgebra', 2);
+SELECT *
+FROM aluno;
+SELECT *
+FROM professor;
+SELECT *
+FROM funcionario;
 
---alterando dados na tabela funcionario
-UPDATE funcionario
-SET valor_hora = 1000
-WHERE funcionario_id= 1;
 
-DELETE FROM funcionario
-WHERE funcionario_id = 1;
-
-INSERT INTO professor (professor_id, departamento_academico, titulacao, especialidade, fk_pessoa_pessoa_id) VALUES
-(1, 'Matemática', 'Doutorado', 'Álgebra', 2);
-
-SELECT * FROM FUNCIONARIO;
