@@ -33,3 +33,12 @@ Com o banco de dados em funcionamento, formulamos perguntas estratégicas para e
 ## Conclusão
 
 Este projeto proporcionou uma experiência prática na construção e manipulação de um banco de dados, desde a modelagem conceitual até a análise de dados, usando ferramentas modernas de gestão de banco de dados.
+
+## Créditos
+
+Este projeto foi realizado com a colaboração dos seguintes membros da equipe:
+
+- José Almir
+- Álef Rodrigues
+- Henrique Rojas
+- Zhihang Lin
