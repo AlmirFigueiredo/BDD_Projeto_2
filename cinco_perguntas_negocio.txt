@@ -1,9 +1,0 @@
-1-) Qual é o metodo de pagamento mais utilizado?
-
-2-) Qual são os produtos mais vendidos?
-
-3-) Qual é o valor médio dos pedidos?
-
-4-) Qual a disponibilidade atual de livros por genero?
-
-5-) Qual é a distribuição de alunos por ano escolar?
