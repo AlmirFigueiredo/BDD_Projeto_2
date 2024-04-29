@@ -31,7 +31,9 @@ CREATE TABLE professor (
 );
 
 CREATE TABLE cliente (
-    cliente_id INTEGER PRIMARY KEY
+    cliente_id INTEGER,
+    fk_pessoa_pessoa_id INTEGER,
+    PRIMARY KEY (cliente_id, fk_pessoa_pessoa_id)
 );
 
 CREATE TABLE aluno (
@@ -55,7 +57,8 @@ CREATE TABLE pedido (
     status_pagamento VARCHAR,
     status_entrega VARCHAR,
     data_entrega DATE,
-    fk_cliente_cliente_id INTEGER
+    fk_cliente_cliente_id INTEGER,
+    fk_cliente_fk_pessoa_pessoa_id INTEGER
 );
 
 CREATE TABLE produto (
@@ -162,7 +165,8 @@ CREATE TABLE mensalidade (
 
 CREATE TABLE inclui_prod (
     fk_produto_produto_id INTEGER,
-    fk_pedido_pedido_id INTEGER
+    fk_pedido_pedido_id INTEGER,
+    quantidade INTEGER
 );
 
 CREATE TABLE fornece_prod (
@@ -172,6 +176,7 @@ CREATE TABLE fornece_prod (
 
 CREATE TABLE emprestimo (
     fk_cliente_cliente_id INTEGER,
+    fk_cliente_fk_pessoa_pessoa_id INTEGER,
     fk_livro_livro_id INTEGER,
     emprestimo_id INTEGER PRIMARY KEY,
     valor_multa DECIMAL,
@@ -221,14 +226,19 @@ ALTER TABLE professor ADD CONSTRAINT FK_professor_2
     REFERENCES pessoa (pessoa_id)
     ON DELETE CASCADE;
  
+ALTER TABLE cliente ADD CONSTRAINT FK_cliente_2
+    FOREIGN KEY (fk_pessoa_pessoa_id)
+    REFERENCES pessoa (pessoa_id)
+    ON DELETE CASCADE;
+ 
 ALTER TABLE aluno ADD CONSTRAINT FK_aluno_2
     FOREIGN KEY (fk_pessoa_pessoa_id)
     REFERENCES pessoa (pessoa_id)
     ON DELETE CASCADE;
  
 ALTER TABLE pedido ADD CONSTRAINT FK_pedido_2
-    FOREIGN KEY (fk_cliente_cliente_id)
-    REFERENCES cliente (cliente_id)
+    FOREIGN KEY (fk_cliente_cliente_id, fk_cliente_fk_pessoa_pessoa_id)
+    REFERENCES cliente (cliente_id, fk_pessoa_pessoa_id)
     ON DELETE CASCADE;
  
 ALTER TABLE livro ADD CONSTRAINT FK_livro_2
@@ -282,8 +292,8 @@ ALTER TABLE fornece_prod ADD CONSTRAINT FK_fornece_prod_2
     ON DELETE SET NULL;
  
 ALTER TABLE emprestimo ADD CONSTRAINT FK_emprestimo_2
-    FOREIGN KEY (fk_cliente_cliente_id)
-    REFERENCES cliente (cliente_id)
+    FOREIGN KEY (fk_cliente_cliente_id, fk_cliente_fk_pessoa_pessoa_id)
+    REFERENCES cliente (cliente_id, fk_pessoa_pessoa_id)
     ON DELETE RESTRICT;
  
 ALTER TABLE emprestimo ADD CONSTRAINT FK_emprestimo_3
