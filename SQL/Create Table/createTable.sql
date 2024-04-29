@@ -1,5 +1,3 @@
-/* Logico: */
-
 CREATE TABLE pessoa (
     email VARCHAR,
     endereco VARCHAR,
