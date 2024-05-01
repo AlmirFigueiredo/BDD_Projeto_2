@@ -30,6 +30,13 @@ Com o banco de dados em funcionamento, formulamos perguntas estratégicas para e
 4. Qual a disponibilidade atual de livros por gênero?
 5. Qual é a distribuição de alunos por ano escolar?
 
+Com a ferramenta de visualização de dados Power Bi, foi possivel responder as perguntas estratégicas para o negócio:
+<img src="DashBoard.png" width="750" height="500">
+
+É possível tambem acessar a dashboard interativa, e aplicar os filtros clicando em produtos, metodos de pagamentos e etc
+
+[Visite nosso DashBoard Interativo](https://app.powerbi.com/groups/me/reports/29c0a3cd-5187-4568-951e-4defd029eca3/ReportSection?experience=power-bi&redirectedFromSignup=1)
+
 ## Conclusão
 
 Este projeto proporcionou uma experiência prática na construção e manipulação de um banco de dados, desde a modelagem conceitual até a análise de dados, usando ferramentas modernas de gestão de banco de dados.
