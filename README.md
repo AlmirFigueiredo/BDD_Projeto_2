@@ -31,6 +31,8 @@ Com o banco de dados em funcionamento, formulamos perguntas estratégicas para e
 5. Qual é a distribuição de alunos por ano escolar?
 
 Com a ferramenta de visualização de dados Power Bi, foi possivel responder as perguntas estratégicas para o negócio:
+
+
 <img src="DashBoard.png" width="750" height="500">
 
 É possível tambem acessar a dashboard interativa, e aplicar os filtros clicando em produtos, metodos de pagamentos e etc
